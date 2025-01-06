@@ -1,0 +1,21 @@
+{
+  "name": "raitamitra",
+  "version": "1.0.0",
+  "description": "RaitaMitra/\r ├── backend/\r │   ├── models/\r │   │   ├── Product.js            # Product schema for MongoDB\r │   │   ├── User.js               # User schema for MongoDB\r │   ├── routes/\r │   │   ├── authRoutes.js         # Auth routes for Sign Up, Sign In\r │   │   ├── productRoutes.js      # Product-related routes (CRUD for products)\r │   ├── config/\r │   │   ├── db.js                 # MongoDB connection setup\r │   │   ├── mysql.js              # MySQL connection setup\r │   ├── middleware/\r │   │   ├── authMiddleware.js     # Middleware to verify JWT tokens for authentication\r │   ├── server.js                 # Express server setup\r ├── frontend/\r │   ├── public/\r │   │   ├── index.html            # Main HTML file\r │   │   ├── assets/               # Images/icons (e.g., logos, icons)\r │   ├── src/\r │   │   ├── components/           # Reusable React components\r │   │   │   ├── Navbar.js         # Navigation bar\r │   │   │   ├── FarmerDashboard.js # Farmer's product dashboard\r │   │   │   ├── Shopping.js       # Shopping page\r │   │   │   ├── Welcome.js        # Welcome screen\r │   │   ├── pages/                # Page components\r │   │   │   ├── SignUp.js         # Sign Up page\r │   │   │   ├── SignIn.js         # Sign In page\r │   │   │   ├── HomePage.js       # Home page after login\r │   │   ├── styles/               # CSS files for styling\r │   │   │   ├── Navbar.css        # Styles for Navbar\r │   │   │   ├── FarmerDashboard.css # Styles for FarmerDashboard\r │   │   │   ├── Shopping.css      # Styles for Shopping page\r │   │   │   ├── Welcome.css       # Styles for Welcome page\r │   │   ├── utils/                # Utility functions\r │   │   │   ├── api.js            # API functions for requests\r │   │   │   ├── auth.js           # Functions to manage auth token\r │   │   │   ├── validation.js     # Functions for form validation\r │   │   ├── App.js                # Main React component\r │   │   ├── index.js              # React entry point\r ├── package.json                  # NPM dependencies\r ├── README.md                     # Project documentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.3",
+    "multer": "^1.4.5-lts.1",
+    "react-scripts": "^5.0.1"
+  }
+}

@@ -1,0 +1,64 @@
+/* Center everything */
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+  background-color: #e0f7fa; /* Optional: Add a background color */
+}
+
+/* Animation styles */
+.welcome-message {
+  opacity: 0;
+  animation: fadeIn 2s forwards, bounce 4s infinite;
+}
+
+.welcome-message h1 {
+  font-size: 4rem;
+  color: #00796b;
+}
+
+.welcome-message p {
+  font-size: 1.5rem;
+  color: #004d40;
+}
+
+/* Styles for the existing Welcome page */
+.welcome-content h1 {
+  font-size: 3rem;
+  color: #00796b;
+}
+
+.welcome-content p {
+  font-size: 1.2rem;
+  color: #004d40;
+}
+
+.welcome-links {
+  margin-top: 20px;
+}
+
+.welcome-links a {
+  text-decoration: none;
+  color: #4caf50;
+  margin: 0 15px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.welcome-links a:hover {
+  color: #388e3c;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
