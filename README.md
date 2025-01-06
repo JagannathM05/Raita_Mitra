@@ -1,47 +1,31 @@
-RaitaMitra/
-├── backend/
-│   ├── models/
-│   │   ├── Product.js            # Product schema for MongoDB
-│   │   ├── User.js               # User schema for MongoDB
-│   ├── routes/
-│   │   ├── authRoutes.js         # Auth routes for Sign Up, Sign In
-│   │   ├── productRoutes.js      # Product-related routes (CRUD for products)
-│   ├── config/
-│   │   ├── db.js                 # MongoDB connection setup
-│   │   ├── mysql.js              # MySQL connection setup
-│   ├── middleware/
-│   │   ├── authMiddleware.js     # Middleware to verify JWT tokens for authentication
-│   ├── server.js                 # Express server setup
-├── frontend/
-│   ├── public/
-│   │   ├── index.html            # Main HTML file
-│   │   ├── assets/               # Images/icons (e.g., logos, icons)
-│   ├── src/
-│   │   ├── components/           # Reusable React components
-│   │   │   ├── Navbar.js         # Navigation bar
-│   │   │   ├── FarmerDashboard.js # Farmer's product dashboard
-│   │   │   ├── Shopping.js       # Shopping page
-│   │   │   ├── Welcome.js        # Welcome screen
-│   │   ├── pages/                # Page components
-│   │   │   ├── SignUp.js         # Sign Up page
-│   │   │   ├── SignIn.js         # Sign In page
-│   │   │   ├── HomePage.js       # Home page after login
-│   │   ├── styles/               # CSS files for styling
-│   │   │   ├── Navbar.css        # Styles for Navbar
-│   │   │   ├── FarmerDashboard.css # Styles for FarmerDashboard
-│   │   │   ├── Shopping.css      # Styles for Shopping page
-│   │   │   ├── Welcome.css       # Styles for Welcome page
-│   │   ├── utils/                # Utility functions
-│   │   │   ├── api.js            # API functions for requests
-│   │   │   ├── auth.js           # Functions to manage auth token
-│   │   │   ├── validation.js     # Functions for form validation
-│   │   ├── App.js                # Main React component
-│   │   ├── index.js              # React entry point
-├── package.json                  # NPM dependencies
-├── README.md                     # Project documentation
+# RaitaMitra
 
+RaitaMitra is a web application that connects farmers directly with buyers for a better agricultural future.
 
+## Features
 
+* User authentication and authorization
+* Product listing and filtering
+* Shopping cart and checkout functionality
+* Farmer dashboard for managing products and orders
+* Admin dashboard for managing users and products
+
+## Technologies Used
+
+* Frontend: React, Redux, CSS
+* Backend: Node.js, Express, MongoDB
+* Database: MongoDB
+
+## Installation
+
+1. Clone the repository using `git clone https://github.com/JagannathMalode/RaitaMitra.git`
+2. Install dependencies using `npm install`
+3. Start the backend server using `npm start`
+4. Start the frontend server using `npm start` in the `frontend` directory
+
+## Project Structure
+
+```
 RaitaMitra/
 ├── backend/
 │   ├── models/
@@ -62,14 +46,14 @@ RaitaMitra/
 │   │   ├── assets/
 │   ├── src/
 │   │   ├── components/
-│   │   │   ├── Navbar.js          # Updated with Sign In/Sign Up links
+│   │   │   ├── Navbar.js
 │   │   │   ├── FarmerDashboard.js
 │   │   │   ├── Shopping.js
-│   │   │   ├── Welcome.js         # Updated with Sign In/Sign Up links
+│   │   │   ├── Welcome.js
 │   │   ├── pages/
 │   │   │   ├── SignUp.js
 │   │   │   ├── SignIn.js
-│   │   │   ├── HomePage.js        # Updated with Sign In/Sign Up links
+│   │   │   ├── HomePage.js
 │   │   │   ├── Sell.js
 │   │   │   ├── ProductDetails.js
 │   │   ├── styles/
@@ -86,3 +70,25 @@ RaitaMitra/
 │   │   ├── index.js
 ├── package.json
 ├── README.md
+```
+
+## Usage
+
+1. Open the application in your web browser at `http://localhost:3000`
+2. Sign up or log in to access the application
+3. Browse products and add them to your shopping cart
+4. Checkout and complete your order
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgments
+
+* Jagannath Malode for creating the initial version of the application
+* [Other contributors] for their contributions to the project
+
